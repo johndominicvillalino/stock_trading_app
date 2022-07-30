@@ -15,6 +15,10 @@ gem 'pg'
 gem 'devise'
 gem 'cancancan'
 gem 'hamlit-rails'
+gem 'bootstrap'
+gem 'jquery-rails'
+gem 'sassc-rails'
+
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -23,7 +27,7 @@ end
 group :development do
   gem "pry"
   gem "web-console"
- end
+end
 
 group :test do
   gem "capybara"
