@@ -3,10 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
-gem "sprockets-rails"
+gem 'sprockets-rails'
 gem "puma", "~> 5.0"
 gem "importmap-rails"
-gem "turbo-rails"
+gem "turbo-rails", '~> 1.0.0'
 gem "stimulus-rails"
 gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
@@ -15,6 +15,10 @@ gem 'pg'
 gem 'devise'
 gem 'cancancan'
 gem 'hamlit-rails'
+gem 'bootstrap', '~> 5.2.0'
+gem 'jquery-rails'
+gem 'sassc-rails'
+
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -23,7 +27,7 @@ end
 group :development do
   gem "pry"
   gem "web-console"
- end
+end
 
 group :test do
   gem "capybara"
