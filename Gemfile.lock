@@ -108,6 +108,8 @@ GEM
     erubi (1.10.0)
     execjs (2.8.1)
     ffi (1.15.5)
+    font-awesome-sass (6.1.2)
+      sassc (~> 2.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     hamlit (2.16.0)
@@ -313,6 +315,7 @@ DEPENDENCIES
   capybara
   debug
   devise
+  font-awesome-sass
   hamlit-rails
   importmap-rails
   jbuilder
