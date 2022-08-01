@@ -1,29 +1,199 @@
-<div class='container-fluid bg-light'>
+<!-- start banner -->
+  <!-- start nav --> 
+<div class='container-fluid bg-light pb-5'>
     <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#"><%= image_tag 'trading_logo', class:'logo-branding'%></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
-        <ul class="navbar-nav gap-5">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Listing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Trading</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Regulations</a>
-          </li>
-        </ul>
-      </div>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-secondary" type="submit">Search</button>
-      </form>
+      <div class="container">
+        <a class="navbar-brand" href="#"><%= image_tag 'trading_logo', class:'logo-branding'%></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+          <ul class="navbar-nav gap-5">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">LISTING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">TRADING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">REGULATIONS</a>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </form>
       </div>
     </nav>
+  <!-- end nav --> 
+
+  <!-- start hero --> 
+  <div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-6 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1">Stock Trading</h1>
+        <p class="lead">Stock Trading App is built using Rails 7. The goal of this app is for us to learn the Rails backend Framework as much as we could. We will try to mimic the common features a trading app has.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2 fw-bold">Start Trading</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Sign Up</button>
+        </div>
+      </div>
+      <div class="col-lg-6 p-3 p-lg-5 pt-lg-3">
+          <%= image_tag 'trading_logo', class:'img-fluid'%>
+      </div>
+    </div>
+  </div>
+  <!-- end hero --> 
+</div>
+<!-- end banner -->
+
+
+
+<div class='container-fluid p-5 mb-5'>
+  <h2 class='h1 text-center mb-5'>Hot Listings</h2>
+ <div class='col d-flex justify-content-center'> 
+
+   <div class="row justify-content-center gap-5">
+      <div class="card" style="width: 18rem;">
+        <%= image_tag '2go'%>
+        <div class="card-body">
+          <h5 class="card-title">2GO Group, Inc.</h5>
+         <span class="card-text" >Price: </span><span class="card-text">134.11</span><br>
+         <span class="card-text" >Previous Price: </span><span class="card-text">130.25</span><br>
+            <span class="card-text">+ 2.63%</span><br>
+             <span class="card-text" >Last Trade: </span><span class="card-text">01-July</span><br><br>
+
+          <a href="#" class="btn btn-primary">See Listing</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <%= image_tag '2go'%>
+        <div class="card-body">
+          <h5 class="card-title">2GO Group, Inc.</h5>
+         <span class="card-text" >Price: </span><span class="card-text">134.11</span><br>
+         <span class="card-text" >Previous Price: </span><span class="card-text">130.25</span><br>
+            <span class="card-text">+ 2.63%</span><br>
+         <span class="card-text" >Last Trade: </span><span class="card-text">01-July</span><br><br>
+
+          <a href="#" class="btn btn-primary">See Listing</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <%= image_tag '2go'%>
+        <div class="card-body">
+          <h5 class="card-title">2GO Group, Inc.</h5>
+         <span class="card-text" >Price: </span><span class="card-text">134.11</span><br>
+         <span class="card-text" >Previous Price: </span><span class="card-text">130.25</span><br>
+          <span class="card-text">+ 2.63%</span><br>
+             <span class="card-text" >Last Trade: </span><span class="card-text">01-July</span><br><br>
+          <a href="#" class="btn btn-primary">See Listing</a>
+        </div>
+      </div>
+    </div>  
+  </div>
 </div>
 
+<div class="container-fluid bg-light p-5">
+  <div class="container px-4 py-5 bg-light" id="icon-grid">
+      <h2 class="pb-2 border-bottom">All Listings</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
 
+        <div class="col d-flex align-items-start">
+         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <%= image_tag 'stock', class:"listing-icon" %>
+          </div>
+          <div>
+            <h4 class="fw-bold mb-0">SM Prime Holdings</h4>
+            <div class='p-0 m-0'><span>Price: </span><span>256</span></div>
+            <p class='p-0 m-0'>+2.25%</p>
+          </div>
+        </div>
+
+         <div class="col d-flex align-items-start">
+         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <%= image_tag 'stock', class:"listing-icon" %>
+          </div>
+          <div>
+            <h4 class="fw-bold mb-0">SM Prime Holdings</h4>
+            <div class='p-0 m-0'><span>Price: </span><span>256</span></div>
+            <p class='p-0 m-0'>+2.25%</p>
+          </div>
+        </div>
+
+         <div class="col d-flex align-items-start">
+         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <%= image_tag 'stock', class:"listing-icon" %>
+          </div>
+          <div>
+            <h4 class="fw-bold mb-0">SM Prime Holdings</h4>
+            <div class='p-0 m-0'><span>Price: </span><span>256</span></div>
+            <p class='p-0 m-0'>+2.25%</p>
+          </div>
+        </div>
+
+         <div class="col d-flex align-items-start">
+         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <%= image_tag 'stock', class:"listing-icon" %>
+          </div>
+          <div>
+            <h4 class="fw-bold mb-0">SM Prime Holdings</h4>
+            <div class='p-0 m-0'><span>Price: </span><span>256</span></div>
+            <p class='p-0 m-0'>+2.25%</p>
+          </div>
+        </div>
+
+         <div class="col d-flex align-items-start">
+         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <%= image_tag 'stock', class:"listing-icon" %>
+          </div>
+          <div>
+            <h4 class="fw-bold mb-0">SM Prime Holdings</h4>
+            <div class='p-0 m-0'><span>Price: </span><span>256</span></div>
+            <p class='p-0 m-0'>+2.25%</p>
+          </div>
+        </div>
+
+         <div class="col d-flex align-items-start">
+         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <%= image_tag 'stock', class:"listing-icon" %>
+          </div>
+          <div>
+            <h4 class="fw-bold mb-0">SM Prime Holdings</h4>
+            <div class='p-0 m-0'><span>Price: </span><span>256</span></div>
+            <p class='p-0 m-0'>+2.25%</p>
+          </div>
+        </div>
+
+         <div class="col d-flex align-items-start">
+         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <%= image_tag 'stock', class:"listing-icon" %>
+          </div>
+          <div>
+            <h4 class="fw-bold mb-0">SM Prime Holdings</h4>
+            <div class='p-0 m-0'><span>Price: </span><span>256</span></div>
+            <p class='p-0 m-0'>+2.25%</p>
+          </div>
+        </div>
+        
+         <div class="col d-flex align-items-start">
+         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <%= image_tag 'stock', class:"listing-icon" %>
+          </div>
+          <div>
+            <h4 class="fw-bold mb-0">SM Prime Holdings</h4>
+            <div class='p-0 m-0'><span>Price: </span><span>256</span></div>
+            <p class='p-0 m-0'>+2.25%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class='bg-secondary text-white '>
+     <p>Stock Trading App Built with Rails Full Stack</p>
+    </div>
+  </footer>
