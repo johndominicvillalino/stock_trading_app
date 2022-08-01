@@ -18,6 +18,7 @@ gem 'hamlit-rails'
 gem 'bootstrap', '~> 5.2.0'
 gem 'jquery-rails'
 gem 'sassc-rails'
+gem "font-awesome-sass"
 
 
 group :development, :test do

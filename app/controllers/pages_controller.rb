@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   def index
   end
 
-  def new
+  def login_mockup
   end
 
 
