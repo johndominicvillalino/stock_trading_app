@@ -26,6 +26,10 @@ Devise.setup do |config|
   # with default "from" parameter.
   config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
 
+  # rails 7 bug fix unknwon method
+  config.navigational_formats = ['*/*', :html, :turbo_stream]
+
+
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
 
