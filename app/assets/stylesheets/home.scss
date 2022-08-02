@@ -1,6 +1,7 @@
 .logo-branding {
     width: 100px;
     height: auto;
+    transition: transform .40s;
 }
 
 .form-control:focus {
@@ -24,4 +25,8 @@ footer > div {
 footer > div > p {
     font-size: 12px;
     text-align: center;
+}
+
+.logo-branding:hover {
+    transform: scale(1.1);
 }

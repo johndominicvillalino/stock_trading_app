@@ -1,33 +1,5 @@
 <!-- start banner -->
-  <!-- start nav --> 
-<div class='container-fluid bg-light pb-5'>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#"><%= image_tag 'trading_logo', class:'logo-branding'%></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
-          <ul class="navbar-nav gap-5">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">LISTING</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">TRADING</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">REGULATIONS</a>
-            </li>
-          </ul>
-        </div>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-secondary" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-  <!-- end nav --> 
-
+ 
   <!-- start hero --> 
   <div class="container my-5">
     <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
@@ -35,10 +7,10 @@
         <h1 class="display-4 fw-bold lh-1 text-success">Stock Trading</h1>
         <p class="lead">Stock Trading App is built using Rails 7. The goal of this app is for us to learn the Rails backend Framework as much as we could. We will try to mimic the common features a trading app has.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-        <%= link_to sample_login_path do %>
+        <%= link_to new_user_session_path do %>
           <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold">Start Trading</button>
         <% end %>
-        <%= link_to sample_signup_path do %>
+        <%= link_to new_user_registration_path do %>
           <button type="button" class="btn btn-outline-secondary btn-lg px-4">Sign Up</button>
         <% end %>
         </div>
@@ -51,8 +23,6 @@
   <!-- end hero --> 
 </div>
 <!-- end banner -->
-
-
 
 <div class='container-fluid p-5 mb-5'>
   <h2 class='h1 text-center mb-5'>Hot Listings</h2>

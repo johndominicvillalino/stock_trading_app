@@ -4,7 +4,6 @@ class CreateTransactions < ActiveRecord::Migration[7.0]
       t.integer :quantity
       t.string :type
       t.integer :amount
-
       t.timestamps
     end
   end
