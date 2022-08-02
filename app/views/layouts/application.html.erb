@@ -13,6 +13,7 @@
 
   <body>
 
+ <% if !user_signed_in? %> 
    <!-- start nav --> 
 <div class='container-fluid bg-light pb-5'>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -42,9 +43,15 @@
         </form>
       </div>
     </nav>
+  </div>
+  <%end%>
+
+
   <!-- end nav --> 
     <p class='notice'> <%= notice %> </p>
     <p class='alert'> <%= alert %> </p>
     <%= yield %>
   </body>
 </html>
+
+ <%= javascript_include_tag "controllers/dashboard" %>
