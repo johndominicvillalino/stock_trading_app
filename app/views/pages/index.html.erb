@@ -7,10 +7,10 @@
         <h1 class="display-4 fw-bold lh-1 text-success">Stock Trading</h1>
         <p class="lead">Stock Trading App is built using Rails 7. The goal of this app is for us to learn the Rails backend Framework as much as we could. We will try to mimic the common features a trading app has.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-        <%= link_to sample_login_path do %>
+        <%= link_to new_user_session_path do %>
           <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold">Start Trading</button>
         <% end %>
-        <%= link_to sample_signup_path do %>
+        <%= link_to new_user_registration_path do %>
           <button type="button" class="btn btn-outline-secondary btn-lg px-4">Sign Up</button>
         <% end %>
         </div>
@@ -23,8 +23,6 @@
   <!-- end hero --> 
 </div>
 <!-- end banner -->
-
-
 
 <div class='container-fluid p-5 mb-5'>
   <h2 class='h1 text-center mb-5'>Hot Listings</h2>

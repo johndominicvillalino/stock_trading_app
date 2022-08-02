@@ -4,8 +4,4 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
    root to: "pages#index"
-   
-   get '/sample-login', to:'pages#login_mockup'
-   get '/sample-signup', to:'pages#register_mockup'
-
 end
