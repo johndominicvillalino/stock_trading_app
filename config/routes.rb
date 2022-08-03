@@ -4,8 +4,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root to: "pages#index"
+
   get '/dashboard/', to: 'trader_dashboard#index', as: 'trader_dashboard'
 
+  post '/stocks/', to: 'stock#create', as: 'stock_create'
 
 end
 
